@@ -20,7 +20,8 @@ document.querySelector('.check').addEventListener('click', (event) => {
         document.querySelector('.message').textContent = 'No values selected';
     } else if(secretNumber === guess) {
         document.querySelector('.message').textContent = 'Correct number!!!!';
-        document.querySelector('body').style.backgroundColor = 'green'
+        document.querySelector('body').style.backgroundColor = 'green';
+        document.querySelector('.number').style.width = '30rem';
         document.querySelector('.number').textContent = secretNumber;
 
     } else if(guess > secretNumber) {
